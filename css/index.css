@@ -133,54 +133,66 @@ table {
 html,
 body {
   height: 100%;
-  background: #eff5f5;
+  background: #4a4b4b;
 }
 .container {
   width: 880px;
   margin: 0 auto;
 }
-h1, h2 {
-  margin-bottom: 10px;
-}
-
 header nav {
   display: flex;
   justify-content: space-around;
-  border: 1px solid red;
   text-align: center;
   margin-bottom: 8%;
   padding: 2%;
-  background:aqua;
+  background-color: #792929;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 200%;
+  color: #020202;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .parent-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.parent-box h2 {
+  text-align: ceter;
 }
 .parent-box .box {
-  background-color:lightgrey;
+  background-color: #792929;
   border: 1px solid black;
   width: 48%;
   padding: 5%;
   margin-bottom: 2%;
- text-align: center;
-}
-.parent-box h2 {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 200%;
 }
-.bottomboxes{
-
-  border: 1px solid red;
+h2 {
+  text-align: center;
+  margin-bottom: 5%;
 }
-
- .img {
-  
-  width:100%;
-  height:auto;
-
+.bottomboxes {
+  border: 1px dashed black;
 }
-
-.bottomboxes .box{
-text-align: center;
-		
+.bottomboxes .box {
+  text-align: center;
+  background: #792929;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+footer {
+  text-align: center;
+  padding: 5%;
+  border: 1px solid black;
+  margin: 5% 35%;
+  background: #792929;
 }

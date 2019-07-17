@@ -53,10 +53,12 @@ table {
     box-sizing: border-box;
 }
 @text-font: 'Raleway', sans-serif;
+@nav-font: 'Permanent Marker', cursive;
+@main-font:rgb(121, 41, 41);
 
 html, body {
 	height: 100%;
-	background: rgb(239, 245, 245);
+	background: rgb(74, 75, 75);
 }
 
 .container {
@@ -70,14 +72,25 @@ html, body {
 header{
 
 
-	nav{
-		display:flex;
-		justify-content:space-around;
-		border:1px solid blue;
+	nav {
+		display: flex;
+		justify-content: space-around;
+		
 		text-align: center;
-margin-bottom: 10%;
-		padding:2%;
-	}
+		margin-bottom: 8%;
+		padding: 2%;
+		background-color:rgb(121, 41, 41);
+		font-family: @nav-font;
+		font-size: 200%;
+		color: rgb(2, 2, 2);
+
+		@media (max-width: 500px) {
+			display: flex;
+		flex-direction:column;
+			
+		}
+		
+	  }
 
 
 
@@ -85,27 +98,67 @@ margin-bottom: 10%;
 
 
 
-.parentbox{
+.parent-box{
 	display:flex;
 	flex-wrap: wrap;
 	justify-content:space-between;
-	border-bottom: 2px solid black;
 
+
+
+
+	
+ h2 {
+		text-align: ceter;
+	  }
 
 .box {
-	background-color:;
-	border: 1px solid yellow;
-	width:48%;
-	padding: 20px;
-	margin-bottom: 20px;
-}
+	background-color:rgb(121, 41, 41);
+	border: 1px solid black;
+	width: 48%;
+	
+	padding: 5%;
+	margin-bottom: 2%;
+   text-align: center;
+   
+   
+	   font-family: @text-font;
+	   font-size: 200%;
+   
 		
 }	
+}
 	
 	h2{
-		text-align:center;}
-
-	.bottomboxes .box{
-
-
+		text-align:center;
+	margin-bottom: 5%;
 	}
+
+
+
+	
+	  .bottomboxes{
+	  
+		border:1px dashed black;
+		
+		
+		.box{
+	  text-align: center;
+	  background: @main-font;
+			  
+	  }
+	  }
+	  
+	   .img {
+		
+		width:100%;
+		height:auto;
+	  
+	  }
+	  footer {
+		  text-align: center;
+		  padding: 5%;
+		  border:1px solid black;
+		  margin:5% 35%;
+		  background: @main-font;
+	  }
+	  
