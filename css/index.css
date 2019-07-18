@@ -133,7 +133,7 @@ table {
 html,
 body {
   height: 100%;
-  background: #4a4b4b;
+  background: #1f1c21;
 }
 .container {
   width: 880px;
@@ -145,10 +145,15 @@ header nav {
   text-align: center;
   margin-bottom: 8%;
   padding: 2%;
-  background-color: #792929;
+  background-color: #1f1c21;
   font-family: 'Permanent Marker', cursive;
   font-size: 200%;
-  color: #020202;
+}
+header nav a {
+  color: #eee;
+}
+header nav a:hover {
+  color: #534b58;
 }
 @media (max-width: 500px) {
   header nav {
@@ -165,14 +170,18 @@ header nav {
   text-align: ceter;
 }
 .parent-box .box {
-  background-color: #792929;
-  border: 1px solid black;
+  background-color: #1f1c21;
   width: 48%;
   padding: 5%;
   margin-bottom: 2%;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  color: rgba(238, 238, 238, 0.747);
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 200%;
+}
+.parent-box .box h1 {
+  font-size: 200%;
+  margin-bottom: 5%;
 }
 h2 {
   text-align: center;
@@ -180,10 +189,12 @@ h2 {
 }
 .bottomboxes {
   border: 1px dashed black;
+  font-family: 'Nunito Sans', sans-serif;
+  color: rgba(238, 238, 238, 0.747);
 }
 .bottomboxes .box {
   text-align: center;
-  background: #792929;
+  background: #1f1c21;
 }
 .img {
   width: 100%;
@@ -194,5 +205,5 @@ footer {
   padding: 5%;
   border: 1px solid black;
   margin: 5% 35%;
-  background: #792929;
+  color: rgba(238, 238, 238, 0.747);
 }
