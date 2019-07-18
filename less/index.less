@@ -29,7 +29,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+body { 
 	line-height: 1;
 }
 ol, ul {
@@ -52,8 +52,154 @@ table {
 * {
     box-sizing: border-box;
 }
+@text-font: 'Nunito Sans', sans-serif;
+@nav-font: 'Permanent Marker', cursive;
+@main-font:#1f1c21;
+@font-color:#eee;
+@font-color-main:rgba(238, 238, 238, 0.747);
 
-html, body {
-    height: 100%;
+.space(){
+	justify-content: space-around;
+
+}
+.textCenter{
+text-align: center;
 }
 
+html, body {
+	height: 100%;
+	background: @main-font;
+	}
+
+.container {
+	width :880px;
+	margin: 0 auto;
+
+	
+}
+
+
+header{
+
+
+	nav {
+		display: flex;
+		.space;
+		
+		
+		margin-bottom: 8%;
+		padding: 2%;
+		background-color: @main-font;
+		font-family: @nav-font;
+		font-size: 200%;
+		border-bottom: 1px dashed black;
+		padding: 3% 0;
+		
+		
+		a{
+			color:@font-color;
+			
+			&:hover{
+				color: lighten(@main-font, 20%);
+
+			}
+		}
+
+		@media (max-width: 500px) {
+			display: flex;
+		flex-direction:column;
+			.textCenter;
+		}
+		
+	  }
+
+
+
+}
+
+
+
+.parent-box{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	
+	@media (max-width: 500px) {
+		display: flex;
+	flex-direction:column;
+	align-content: center;
+	}
+
+
+
+	
+ 
+
+.box {
+	background-color: @main-font;
+	
+	width: 48%;
+	
+	padding: 5%;
+	margin-bottom: 2%;
+   
+   
+   color:@font-color-main;
+	   font-family: @text-font;
+	   font-size: 200%;
+
+	   
+ 
+  }	
+  
+  .box :nth-child(2) {
+	.textCenter;
+	
+
+}
+h1{
+	font-size: 200%;
+	margin-bottom: 5%;
+	
+}
+	
+
+ 
+}
+	
+
+
+
+	
+	  .bottomboxes{
+	  
+		
+		font-family: @text-font;
+		color:@font-color-main;
+		border-top: 2px solid black;
+		padding: 5%;
+		
+		.box{
+		.textCenter;
+	  background: @main-font;
+			  
+	  }
+	  }
+	  
+	   .img {
+		
+		width:100%;
+		height:auto;
+	  
+	  }
+	  h2{
+		  margin-bottom: 3%;
+	  }
+	  footer {
+		 .textCenter;
+		  padding: 5%;
+		  border:1px dotted black;
+		  margin:5% 35%;
+		  color:@font-color-main;
+	  }
+	  
