@@ -83,6 +83,8 @@ header{
 		background-color: @main-font;
 		font-family: @nav-font;
 		font-size: 200%;
+		border-bottom: 1px dashed black;
+		padding: 3% 0;
 		
 		
 		a{
@@ -113,13 +115,16 @@ header{
 	flex-wrap: wrap;
 	justify-content:space-between;
 	
+	@media (max-width: 500px) {
+		display: flex;
+	flex-direction:column;
+	align-content: center;
+	}
 
 
 
 	
- h2 {
-		text-align: ceter;
-	  }
+ 
 
 .box {
 	background-color: @main-font;
@@ -128,33 +133,42 @@ header{
 	
 	padding: 5%;
 	margin-bottom: 2%;
-   text-align: center;
+   
    
    color:@font-color-main;
 	   font-family: @text-font;
 	   font-size: 200%;
-   
-		
+
+	   
+ 
+  }	
+  
+  .box :nth-child(2) {
+	text-align:center;
+	
+
+}
 h1{
 	font-size: 200%;
 	margin-bottom: 5%;
-}
-}	
+	text-align: center;
 }
 	
-	h2{
-		text-align:center;
-	margin-bottom: 5%;
-	}
+
+ 
+}
+	
 
 
 
 	
 	  .bottomboxes{
 	  
-		border:1px dashed black;
+		
 		font-family: @text-font;
 		color:@font-color-main;
+		border-top: 2px solid black;
+		padding: 5%;
 		
 		.box{
 	  text-align: center;
@@ -172,7 +186,7 @@ h1{
 	  footer {
 		  text-align: center;
 		  padding: 5%;
-		  border:1px solid black;
+		  border:1px dotted black;
 		  margin:5% 35%;
 		  color:@font-color-main;
 	  }

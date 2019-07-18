@@ -148,6 +148,8 @@ header nav {
   background-color: #1f1c21;
   font-family: 'Permanent Marker', cursive;
   font-size: 200%;
+  border-bottom: 1px dashed black;
+  padding: 3% 0;
 }
 header nav a {
   color: #eee;
@@ -166,31 +168,35 @@ header nav a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.parent-box h2 {
-  text-align: ceter;
+@media (max-width: 500px) {
+  .parent-box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
 }
 .parent-box .box {
   background-color: #1f1c21;
   width: 48%;
   padding: 5%;
   margin-bottom: 2%;
-  text-align: center;
   color: rgba(238, 238, 238, 0.747);
   font-family: 'Nunito Sans', sans-serif;
   font-size: 200%;
 }
-.parent-box .box h1 {
+.parent-box .box :nth-child(2) {
+  text-align: center;
+}
+.parent-box h1 {
   font-size: 200%;
   margin-bottom: 5%;
-}
-h2 {
   text-align: center;
-  margin-bottom: 5%;
 }
 .bottomboxes {
-  border: 1px dashed black;
   font-family: 'Nunito Sans', sans-serif;
   color: rgba(238, 238, 238, 0.747);
+  border-top: 2px solid black;
+  padding: 5%;
 }
 .bottomboxes .box {
   text-align: center;
@@ -203,7 +209,7 @@ h2 {
 footer {
   text-align: center;
   padding: 5%;
-  border: 1px solid black;
+  border: 1px dotted black;
   margin: 5% 35%;
   color: rgba(238, 238, 238, 0.747);
 }
