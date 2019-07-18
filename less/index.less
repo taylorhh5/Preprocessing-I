@@ -57,6 +57,15 @@ table {
 @main-font:#1f1c21;
 @font-color:#eee;
 @font-color-main:rgba(238, 238, 238, 0.747);
+
+.space(){
+	justify-content: space-around;
+
+}
+.textCenter{
+text-align: center;
+}
+
 html, body {
 	height: 100%;
 	background: @main-font;
@@ -75,9 +84,9 @@ header{
 
 	nav {
 		display: flex;
-		justify-content: space-around;
+		.space;
 		
-		text-align: center;
+		
 		margin-bottom: 8%;
 		padding: 2%;
 		background-color: @main-font;
@@ -99,7 +108,7 @@ header{
 		@media (max-width: 500px) {
 			display: flex;
 		flex-direction:column;
-			
+			.textCenter;
 		}
 		
 	  }
@@ -144,14 +153,14 @@ header{
   }	
   
   .box :nth-child(2) {
-	text-align:center;
+	.textCenter;
 	
 
 }
 h1{
 	font-size: 200%;
 	margin-bottom: 5%;
-	text-align: center;
+	
 }
 	
 
@@ -171,7 +180,7 @@ h1{
 		padding: 5%;
 		
 		.box{
-	  text-align: center;
+		.textCenter;
 	  background: @main-font;
 			  
 	  }
@@ -183,8 +192,11 @@ h1{
 		height:auto;
 	  
 	  }
+	  h2{
+		  margin-bottom: 3%;
+	  }
 	  footer {
-		  text-align: center;
+		 .textCenter;
 		  padding: 5%;
 		  border:1px dotted black;
 		  margin:5% 35%;
